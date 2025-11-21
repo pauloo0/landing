@@ -1,9 +1,9 @@
 export const pricingPlans = [
   {
     id: 'standard_monthly',
-    name: 'Standard (mensal)',
+    name: 'Standard',
     price: '19,99€',
-    interval: 'por mês',
+    interval: '/mês',
     priceId: 'price_1STSnYHeL2ihwztL7VASQ7dW',
     features: [
       'Gestão ilimitada de clientes',
@@ -11,12 +11,13 @@ export const pricingPlans = [
       'Agendamento de sessões',
       'Acompanhamento de progresso',
     ],
+    highlighted: false,
   },
   {
     id: 'standard_yearly',
-    name: 'Standard (anual)',
+    name: 'Standard',
     price: '199,99€',
-    interval: 'por ano',
+    interval: '/ano',
     priceId: 'price_1STSnYHeL2ihwztLQioVoOd3',
     popular: true,
     savings: 'Poupe 17%',
@@ -27,5 +28,6 @@ export const pricingPlans = [
       'Acompanhamento de progresso',
       '2 meses grátis',
     ],
+    highlighted: true,
   },
 ]
