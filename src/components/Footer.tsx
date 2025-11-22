@@ -1,4 +1,5 @@
 import { footerLinks } from '@/data/footer'
+import logoHorizontal from '@/assets/logo-horizontal.png'
 
 export default function Footer() {
   return (
@@ -7,7 +8,7 @@ export default function Footer() {
         <div className='grid gap-8 mb-8 md:grid-cols-3'>
           <div>
             <a href='/' className='text-xl font-bold text-lime-500'>
-              TraynLab
+              <img src={logoHorizontal} alt='TraynLab' width={150} />
             </a>
             <p className='text-sm text-gray-400'>
               Gere os teus clientes e acompanha o progresso de cada um da melhor
