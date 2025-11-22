@@ -1,7 +1,7 @@
 export const pricingPlans = [
   {
     id: 'standard_monthly',
-    name: 'Standard',
+    name: 'Standard mensal',
     price: '19,99€',
     interval: '/mês',
     priceId: 'price_1STSnYHeL2ihwztL7VASQ7dW',
@@ -15,7 +15,7 @@ export const pricingPlans = [
   },
   {
     id: 'standard_yearly',
-    name: 'Standard',
+    name: 'Standard anual',
     price: '199,99€',
     interval: '/ano',
     priceId: 'price_1STSnYHeL2ihwztLQioVoOd3',
