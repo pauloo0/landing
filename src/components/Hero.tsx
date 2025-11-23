@@ -12,19 +12,23 @@ export default function Hero() {
           Progresso claro para cada cliente. Gestão eficiente para ti.
         </p>
         <div className='flex flex-col justify-center gap-4 sm:flex-row'>
-          <Button
-            size='lg'
-            className='px-8 py-3 font-bold transition-all rounded-full cursor-pointer hover:scale-110'
-          >
-            Ver planos
-          </Button>
-          <Button
-            size='lg'
-            variant='secondary'
-            className='px-8 py-3 font-bold rounded-full cursor-pointer'
-          >
-            Saber mais
-          </Button>
+          <a href='#pricing'>
+            <Button
+              size='lg'
+              className='px-8 py-3 font-bold transition-all rounded-full cursor-pointer hover:scale-110'
+            >
+              Ver planos
+            </Button>
+          </a>
+          <a href='#features'>
+            <Button
+              size='lg'
+              variant='secondary'
+              className='px-8 py-3 font-bold rounded-full cursor-pointer'
+            >
+              Saber mais
+            </Button>
+          </a>
         </div>
       </div>
     </section>
