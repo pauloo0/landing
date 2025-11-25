@@ -19,6 +19,11 @@ export default function Pricing() {
           <h2 className='mb-4 text-4xl font-bold md:text-5xl text-gray-50 text-balance'>
             Os nossos planos
           </h2>
+          <div className='inline-block px-4 py-2 mb-6 bg-gray-900 border rounded-full border-lime-500'>
+            <p className='text-sm font-semibold text-lime-500'>
+              Apenas 10 vagas disponíveis
+            </p>
+          </div>
           <p className='max-w-2xl mx-auto text-lg text-gray-400'>
             Escolhe o plano que se adapta melhor às tuas necessidades e começa
             hoje a aumentar a tua produtividade!
