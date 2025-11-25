@@ -27,18 +27,37 @@ export default function Pricing() {
         <div className='grid max-w-6xl gap-8 mx-auto md:grid-cols-2'>
           {pricingPlans.map((plan, index) => (
             <Card key={index}>
-              <CardHeader className='mb-6 text-center'>
-                <CardTitle className='mb-2 text-2xl font-bold'>
+              <CardHeader className='mb-4'>
+                <CardTitle className='mb-2 text-2xl font-bold text-center'>
                   {plan.name}
                 </CardTitle>
-                <CardDescription className='text-lg text-gray-400'>
-                  <span className='text-4xl font-bold text-lime-500'>
-                    {plan.price}
-                  </span>{' '}
-                  {plan.interval}
+                <CardDescription className='space-y-2 text-lg text-gray-400'>
+                  {/* Discounted price */}
+                  {plan.promo_price && (
+                    <p className='line-through'>
+                      {plan.price}
+                      {plan.interval === 'month' ? ' /mês' : ' /ano'}
+                    </p>
+                  )}
+                  <p>
+                    <span className='text-4xl font-semibold text-lime-500'>
+                      {plan.promo_price ? plan.promo_price : plan.price}
+                    </span>
+                    {plan.interval === 'month' ? ' /mês' : ' /ano'}
+                  </p>
+                  <p className='flex items-center gap-2 text-sm'>
+                    {plan.savings ? (
+                      <span className='px-2.5 py-1 rounded-full bg-lime-500 text-gray-950'>
+                        {plan.savings}
+                      </span>
+                    ) : (
+                      'Cobrado mensalmente. '
+                    )}
+                    Cancele a qualquer momento
+                  </p>
                 </CardDescription>
               </CardHeader>
-              <CardContent className='flex flex-col items-center'>
+              <CardContent className='flex flex-col'>
                 <a href={`https://web.traynlab.pt/register?plan=${plan.id}`}>
                   <Button
                     size='lg'
